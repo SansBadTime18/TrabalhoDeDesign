@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Produtos Eletrônicos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+   
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+   
+  .sidebar {
+    width: 200px;
+    background-color: #0d0d87;
+    padding: 20px 20px;
+  }
+ 
+   
+  .menu ul {
+    list-style: none;
+    padding-left: 12px;
+  }
+   
+  .menu li {
+    padding: 18px 0;
+    cursor: pointer;
+    color: #ffffff;
+    font-size:20px ;
+  }
+  .menu a{
+    text-decoration: none;
+  }
+   .logo{
+    width:100px;
+    height: 100px;
+    
+   }
+  /* Main Content */
+  .main-content {
+    flex: 1;
+    padding: 10px;
+    background-color: white;
+    position: relative;
+  }
+  #natan >img{
+    width: 1700px;
+    height: auto;
+  }
+   
+  header {
+    background-color: #4747f8;
+    padding: 20px;
+    color: white;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .hg{
+   
+    font-size: 45px;
+    position: absolute ;
+    top: 40px;
+    right: 400px;
+   }
+  .menu1 a{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 34px;
+    color: white;
+    text-decoration:none;
+    right: 15px;
+    padding-inline: 25px;
+  }
+   
+  .product-display {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .social-icons {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  .social-icons img {
+    width: 50px;
+    height:50px;
+  }
+#banana{
+  width: 250px;
+  height:250px;
+}
+#o{
+  display: inline-block;
+}
+.services-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+gap: 20px;
+margin-top: 20px;
+}
+
+.service-card {
+border: 1px solid #4a3dd8;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+transition: transform 0.3s;
+}
+
+.service-card:hover {
+transform: translateY(-5px);
+}
+
+.service-image {
+position: relative;
+height: 200px;
+overflow: hidden;
+}
+
+.service-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.service-overlay {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+padding: 10px;
+background-color: rgba(255,255,255,0.85);
+text-align: center;
+font-weight: bold;
+color: #3588cc;
+}
+
+.service-info {
+padding: 20px;
+}
+
+.service-info h3 {
+color: #3588cc;
+margin-bottom: 10px;
+font-weight: 700;
+font-size: 20px;
+}
+
+.service-info p {
+color: #4a3dd8;
+line-height: 1.6;
+margin-bottom: 15px;
+}
+
+.service-button {font-family: 'Courier New', Courier, monospace;
+display: inline-block;
+padding: 10px 20px;
+font-weight: bold;
+color: white;
+background-color: #0d0d87;
+text-decoration: none;
+border-radius: 5px;
+
+}
+
+.service-button:hover {
+background-color: #3588cc;
+}
+
+.textexplicativo h1{
+font-family: 'Courier New', Courier, monospace;
+}
+    </style>
+  <header>
+     <nav class="menu1"> 
+      <img class="logo" src="imagens/lupa1.png"></img></a> 
+      <a href="#">
+        <a href="#sobrenos" >Sobre Nós</a>
+        <a href="#mouse" >Produtos</a>
+        <a href="https://wa.me/11982879645" target="_blank">Contato</a>
+       
+      
+     </nav>
+</header>
+
+
+        
+            
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+       
+      <nav class="menu">
+        <ul>
+          <a href="#mouse"><li>Mouse</li></a>
+          <a href="#monitor"><li>Monitor</li></a>
+          <a href="#teclado"><li>Teclado</li></a>
+          <a href="#hd"><li>HD</li></a>
+          <a href="#ssd"><li>SSD</li></a>
+          <a href="#impressora"><li>Impressora</li></a>
+          <a href="#fonte"><li>Fonte</li></a>
+        </ul>
+      </nav>
+    </aside>
+    
+    <div class="main-content">
+      <div id = natan><img src="imagens/banner1.png" alt="banner">
+        
+      </div>
+    <section id="services-section">
+      <h1 id="mouse">Mouse</h1><br><br>
+        <div class="services-grid">
+    <div class="service-card">
+        <div class="service-image">
+        <img src="imagens/banana.png" alt="mouse">
+        </div>
+        <div class="service-info">
+        <h3>Mouse Gamer Sem Fio Redragon Mirage Pro - RGB - 8.000dpi - 8 Botões - USB-C ou 2.4GHz - M690-PRO</h3>
+        <a aria-label="Chat no WhatsApp" href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <div class="service-image">
+        <img src="imagens/banana2.png" alt="mouse">
+        </div>
+        <div class="service-info">
+        <h3>Mouse Optico Office Duo Preto Fio Usb Ergonômico 3D Letron</h3>
+        <a aria-label="Chat no WhatsApp" href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <div class="service-image">
+        <img src="imagens/banana1.png" alt="mouse">
+        </div>
+        <div class="service-info">
+        <h3>Mouse Gamer Sem Fio Logitech G PRO X SUPERLIGHT - Vermelho</h3>
+        <a aria-label="Chat no WhatsApp" href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <div class="service-image">
+        <img src="imagens/banana3.png" alt="mouse">
+        </div>
+        <div class="service-info">
+        <h3>Mouse Gamer 12400DPI Memeanlion Honeycomb M809-K PAW3327 Preto</h3>
+        <a aria-label="Chat no WhatsApp" href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <div class="service-image">
+        <img src="imagens/banana4.png" alt="mouse">
+        </div>
+        <div class="service-info">
+        <h3>Mouse Gamer Sem Fio Logitech G PRO Wireless</h3>
+        <a aria-label="Chat no WhatsApp" href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <div class="service-image">
+        <img src="imagens/banana5.png" alt="mouse">
+        </div>
+        <div class="service-info">
+        <h3>Mouse Sensei TEN Steelseries</h3>
+        <a aria-label="Chat no WhatsApp" href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+        </div>
+    </div>
+</section>
+
+
+    <section id="service-card">
+<br><br><h1 id="monitor">Monitores</h1><br><br>
+<div class="services-grid">
+  <div class="service-card">
+    <div class="service-image">
+      <img src="Imagens/laranja.png" alt="Monitor Gamer">
+    </div>
+    <div class="service-info">
+      <h3>LG UltraGear 24GL600F-B</h3>
+      <a href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-image">
+      <img src="Imagens/laranja1.png" alt="Monitor Gamer">
+    </div>
+    <div class="service-info">
+      <h3>Monitor Dell de 27 S2725H</h3>
+      <a href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+  <div class="service-card">
+    <div class="service-image">
+      <img src="Imagens/monitor1.png" alt="Monitor Gamer">
+    </div>
+    <div class="service-info">
+      <h3>Monitor Gamer Goldentec 24" LED, Full HD, Curvo, 144Hz</h3>
+      <a href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+  <div class="service-card">
+    <div class="service-image">
+      <img src="Imagens/monitor2.png" alt="Monitor Gamer">
+    </div>
+    <div class="service-info">
+      <h3>monitor-27-lg-full-hd</h3>
+      <a href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+        <div class="service-image">
+        <img src="imagens/monitor4.png" alt="mouse">
+        </div>
+        <div class="service-info">
+        <h3>Monitor Gamer Acer Nitro 23.8</h3>
+        <a aria-label="Chat no WhatsApp" href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<section id="service-card">
+  <br><br><h1 id="teclado">Teclados</h1><br><br>
+<div class="services-grid">
+  <div class="service-card">
+    <div class="service-image">
+      <img src="imagens/lichia.png" alt="Teclado Mecânico">
+    </div>
+    <div class="service-info">
+      <h3>Teclado Mecânico Gamer Redragon Kumara RGB Switch Outemu Blue</h3>
+      <a href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-image">
+      <img src="imagens/teclado1.png" alt="Teclado Mecânico">
+    </div>
+    <div class="service-info">
+      <h3>Teclado mecânico Redragon Akali 60% RGB Preto</h3>
+      <a href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-image">
+      <img src="imagens/teclado2.png" alt="Teclado Mecânico">
+    </div>
+    <div class="service-info">
+      <h3>Teclado Gamer ELG Dragon War TGDW</h3>
+      <a href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-image">
+      <img src="imagens/teclado4.png" alt="Teclado Mecânico">
+    </div>
+    <div class="service-info">
+      <h3>
+        Teclado Gamer Razer Cynosa Lite</h3>
+      <a href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="service-card">
+  <br><br><h1 id="hd">HDs</h1><br><br>
+<div class="services-grid">
+  <div class="service-card">
+    <div class="service-image">
+      <img src="imagens/limão.png" alt="HD Interno">
+    </div>
+    <div class="service-info">
+      <h3>HD Interno Seagate 1TB SATA 3 7200 RPM</h3>
+      <a href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-image">
+      <img src="imagens/HDD1.png" alt="HD Interno">
+    </div>
+    <div class="service-info">
+      <h3>
+        Disco Rígido Interno Western Digital Blue WD3200AAJS 320GB</h3>
+      <a href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-image">
+      <img src="imagens/HDD2.png" alt="HD Interno">
+    </div>
+    <div class="service-info">
+      <h3>Hd Disco Rígido Interno Toshiba Sata</h3>
+      <a href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-image">
+      <img src="imagens/HDD4.png" alt="HD Interno">
+    </div>
+    <div class="service-info">
+      <h3>HD Sata Para Computador e DVR 160GB </h3>
+      <a href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-image">
+      <img src="imagens/HDD3.png" alt="HD Interno">
+    </div>
+    <div class="service-info">
+      <h3>Crucial BX500 Sata SSD</h3>
+      <a href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section id="service-card">
+  <br><br><h1 id="ssd">SSDs</h1><br><br>
+<div class="services-grid">
+  <div class="service-card">
+    <div class="service-image">
+      <img src="imagens/SSD1.png" alt="SSD 240GB">
+    </div>
+    <div class="service-info">
+      <h3>SSD Kingston Sata A400</h3>
+      <a href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-image">
+      <img src="imagens/SSD2.png" alt="SSD 240GB">
+    </div>
+    <div class="service-info">
+      <h3>SSD Kingston A400 240GB SATA 3 Leitura 500MB/s</h3>
+      <a href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-image">
+      <img src="imagens/SSD3.png" alt="SSD 240GB">
+    </div>
+    <div class="service-info">
+      <h3>SSD Adata Legend 800 M.2 2280 Nvme ALEG-800</h3>
+      <a href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-image">
+      <img src="imagens/SSD4.png" alt="SSD 240GB">
+    </div>
+    <div class="service-info">
+      <h3>SSD M.2 2280 Nvme P300 Patriot</h3>
+      <a href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section id="service-card">
+  <br><br><h1 id="impressora">Impressoras</h1><br><br>
+<div class="services-grid">
+  <div class="service-card">
+    <div class="service-image">
+      <img src="imagens/impressora4.png" alt="Impressora Epson">
+    </div>
+    <div class="service-info">
+      <h3>Impressora Epson EcoTank L3250 Multifuncional Wi-Fi</h3>
+      <a href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-image">
+      <img src="imagens/impressora3.png" alt="Impressora Epson">
+    </div>
+    <div class="service-info">
+      <h3>Impressora Epson Multifuncional Ecotank L5590</h3>
+      <a href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-image">
+      <img src="imagens/impressora2.png" alt="Impressora Epson">
+    </div>
+    <div class="service-info">
+      <h3>Impressora Multifuncional Brother DCPL3560CDW</h3>
+      <a href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-image">
+      <img src="imagens/impressora1.png" alt="Impressora Epson">
+    </div>
+    <div class="service-info">
+      <h3>Impressora Multifuncional Canon G3170 Pixma</h3>
+      <a href="https://wa.me/11982879645" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section id="service-card">
+  <br><br><h1 id="fonte">Fontes</h1><br><br>
+<div class="services-grid">
+  <div class="service-card">
+    <div class="service-image">
+      <img src="imagens/fonte1.png" alt="Fonte ATX">
+    </div>
+    <div class="service-info">
+      <h3>Fonte Corsair CV550 80 Plus Bronze 550W</h3>
+      <a href="https://wa.me/13997988150" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-image">
+      <img src="imagens/fonte2.png" alt="Fonte ATX">
+    </div>
+    <div class="service-info">
+      <h3>Fonte ATX 500W Crusader Fortrek</h3>
+      <a href="https://wa.me/13997988150" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-image">
+      <img src="imagens/fonte3.png" alt="Fonte ATX">
+    </div>
+    <div class="service-info">
+      <h3>Fonte ATX C3Tech 500W PS-G500B 80+ Bronze</h3>
+      <a href="https://wa.me/13997988150" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-image">
+      <img src="imagens/fonte4.png" alt="Fonte ATX">
+    </div>
+    <div class="service-info">
+      <h3>Fonte Corsair CV550 80 Plus Bronze 550W</h3>
+      <a href="https://wa.me/13997988150" target="_blank" class="service-button">Compre</a>
+    </div>
+  </div>
+</div>
+</section><BR><BR><BR>
+
+
+<div class="textoexplicativo">
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><h1 id="sobrenos">Quem Somos - Find Eletronics</h1><br>
+
+  <h2 class="texto1">Seja bem-vindo à Find Eletronics! Somos uma loja movida por qualidade, bom atendimento e atitude.
+  Nossa missão é oferecer o melhor da tecnologia em eletronicos — desktop, notebooks e
+  diversos acessorios na linha de eletronicos — para quem procura o melhor da tecnologia e busca as melhores e mais recentes lançamentos nesta area.
+  </h2>
+
+  <br><br><br><br><br><br><br><br><h1 class="titulo2">A Nossa História</h1><br>
+  
+  <h2 class="texto2">Na Find Eletronics, nossa trajetória começou com um simples objetivo: levar até você os melhores produtos de tecnologia com excelência em atendimento.
+  Desde a nossa fundação, temos nos dedicado a buscar as melhores soluções em eletrônicos, com foco em qualidade, inovação e confiança.
+  Ao longo dos anos, conseguimos criar uma base sólida de clientes satisfeitos, que confiam em nossa expertise para atender suas necessidades tecnológicas.
+  Em cada passo, a nossa busca pela excelência e pela evolução do mercado nos permite oferecer sempre as últimas novidades e o melhor custo-benefício.
+  </h2>
+
+  <br><br><br><br><br><br><br><br><h1 class="titulo3">
+    A Nossa Missão</h1><br>
+  <h2 class="texto3">
+    Nossa missão é clara: proporcionar aos nossos clientes a melhor experiência em tecnologia.
+    Trabalhamos constantemente para trazer uma curadoria de produtos de alta qualidade e última geração, seja em computadores, periféricos ou acessórios.
+    Queremos ser a sua escolha número um quando o assunto é confiança, qualidade e inovação no mercado de eletrônicos.
+    Nossa missão não é apenas oferecer produtos, mas garantir que cada cliente que nos procure saia satisfeito com a sua compra e a experiência de compra.</h2>
+
+    <br><br><br><br><br><br><br><br><h1 class="titulo4">A Nossa Visão</h1><br>
+  <h2 class="texto4">Nossa visão é ser referência no mercado de eletrônicos, reconhecida pela qualidade, inovação e pelo compromisso com a satisfação de nossos clientes.
+    Buscamos constantemente acompanhar as tendências e inovações tecnológicas para oferecer os melhores produtos e serviços.
+    Queremos estar sempre à frente, oferecendo soluções que atendam às necessidades atuais e futuras dos nossos clientes, promovendo o acesso às mais recentes tecnologias de forma acessível e eficiente.</p>
+
+    <br><br><br><br><br><br><br><br><h1 class="titulo5">Gratidão</h1><br>
+  <h2 class="texto5">Agradecemos profundamente a cada cliente que escolhe a Find Eletronics. Sem o seu apoio, não estaríamos onde estamos hoje.
+    Cada compra, cada feedback, cada interação contribui para que possamos melhorar e continuar crescendo.
+    A sua confiança em nossa marca nos inspira a seguir em frente, sempre buscando trazer o que há de mais avançado no mundo dos eletrônicos.
+    Nosso compromisso é com a sua satisfação e, por isso, nossa jornada só faz sentido se estivermos ao seu lado, oferecendo o melhor para suas necessidades.
+</h2>
+    <br><h2>ASS:Natan, Pedro Garlet e Wagner</h2>
+</div>
+
+</nav>
+
+    
+    </div>
+  
+
+ 
+
+     
+    </main>
+  </div>
+</body>
+</html>
